@@ -63,7 +63,7 @@ export default function Hero() {
               href="/reservations"
               className="border border-border hover:border-primary text-foreground hover:text-primary font-semibold px-7 py-3.5 rounded-full transition-colors duration-200"
             >
-              Reserve a Table →
+              Reserve a Table
             </Link>
           </div>
 
@@ -93,10 +93,10 @@ export default function Hero() {
           <div className="absolute w-[380px] h-[380px] bg-primary/20 rounded-full blur-2xl" />
 
           <Image
-            src="/public/images/heroImg.png"
+            src="/images/pastaWSauce.png"
             alt="Featured dish"
-            width={580}
-            height={580}
+            width={500}
+            height={500}
             className="relative z-10 drop-shadow-2xl object-contain"
             priority
           />
