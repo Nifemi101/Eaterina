@@ -11,7 +11,7 @@ export function userConfirmationHtml(data: ReservationEmailPayload): string {
       <body style="font-family: sans-serif; background: #f9f9f9; padding: 32px;">
         <div style="max-width: 600px; margin: 0 auto; background: #fff; border-radius: 10px; padding: 32px; border: 1px solid #eee;">
 
-          <h1 style="color: #c8a96e;">Hi ${data.fullName} 👋</h1>
+          <h1 style="color: #c8a96e;">Hi ${data.fullName}</h1>
           <p style="color: #444; line-height: 1.6;">
             Thanks for reaching out! We've received your reservation request and we're reviewing it now.
             We'll confirm your booking and get back to you shortly.
