@@ -28,6 +28,8 @@
   --color-surface-muted: var(--surface-muted);
   --color-text-muted: var(--text-muted);
   --color-border: var(--border);
+  --font-heading: var(--font-playfair);
+--font-body: var(--font-dm-sans);
 }
 
 body {
