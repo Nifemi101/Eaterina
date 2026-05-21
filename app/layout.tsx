@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, DM_Sans } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/src/components/layout/navbar";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -34,6 +35,7 @@ export default function RootLayout({
         className="min-h-full flex flex-col"
         style={{ fontFamily: "var(--font-dm-sans)" }}
       >
+        <Navbar />
         {children}
       </body>
     </html>
