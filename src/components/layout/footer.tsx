@@ -17,8 +17,8 @@ const QUICK_LINKS = [
 
 const HOURS = [
   { day: "Mon — Thu", time: "11:00 AM – 10:00 PM" },
-  { day: "Fri — Sat", time: "11:00 AM – 12:00 AM" },
-  { day: "Sunday", time: "12:00 PM – 9:00 PM" },
+  { day: "Fri — Sat", time: "11:00 AM – 10:00 PM" },
+  { day: "Sunday", time: "2:00 PM – 9:00 PM" },
 ];
 
 export default function Footer() {
