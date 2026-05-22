@@ -16,7 +16,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Eateria — Fine Dining & Reservations",
+  title: "Eateria",
   description:
     "Experience exceptional cuisine. Reserve your table at Eateria today.",
 };
