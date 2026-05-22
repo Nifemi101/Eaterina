@@ -46,8 +46,8 @@ export default function reservationCta() {
           <Image
             src="/images/ctaImage.png"
             alt="Reserve your table"
-            width={520}
-            height={520}
+            width={500}
+            height={500}
             className="relative z-10 object-contain drop-shadow-2xl transition-transform duration-500 hover:rotate-12"
           />
         </div>
