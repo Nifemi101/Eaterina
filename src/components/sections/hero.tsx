@@ -90,10 +90,10 @@ export default function Hero() {
           <div className="absolute w-[380px] h-[380px] bg-primary/20 rounded-full blur-2xl" />
 
           <Image
-            src="/images/pastaWSauce.png"
+            src="/images/heroPlate.png"
             alt="Featured dish"
-            width={580}
-            height={580}
+            width={500}
+            height={500}
             className="relative z-10 drop-shadow-2xl object-contain transition-transform duration-500 hover:rotate-12"
             priority
           />
