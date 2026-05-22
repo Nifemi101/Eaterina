@@ -3,16 +3,19 @@ import Image from "next/image";
 
 export default function ReservationsPage() {
   return (
-    <main className="min-h-screen bg-[#111009]">
+    <main className="min-h-screen bg-background">
       {/* Header */}
       <section className="text-center pt-16 pb-10">
+        <span className="text-primary text-sm font-medium uppercase tracking-widest">
+          Book a Spot
+        </span>
         <h1
-          className="text-4xl md:text-5xl font-bold text-white"
+          className="text-4xl md:text-5xl font-bold text-foreground mt-2"
           style={{ fontFamily: "var(--font-playfair)" }}
         >
           Reserve Your <span className="text-primary">Table</span>
         </h1>
-        <p className="text-gray-500 mt-3 text-sm">
+        <p className="text-text-muted mt-3 text-sm">
           Experience exceptional cuisine — book your spot today
         </p>
       </section>
@@ -21,21 +24,21 @@ export default function ReservationsPage() {
       <section className="max-w-6xl mx-auto px-6 pb-20 grid grid-cols-1 lg:grid-cols-2 gap-10">
         {/* Left Panel */}
         <div className="space-y-6">
-          {/* Food Image */}
-          <div className="relative w-full h-80 rounded-2xl overflow-hidden">
+          <div className="relative w-full h-[420px] rounded-2xl overflow-hidden">
             <Image
-              src="/images/reservation-dish.jpg"
+              src="/images/reservationImg.jpg"
               alt="Featured dish"
               fill
+              priority
               sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover"
+              className="object-cover object-center"
             />
           </div>
 
           {/* What to Expect */}
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+          <div className="bg-surface border border-border rounded-2xl p-6">
             <h3
-              className="text-white font-semibold text-lg mb-4"
+              className="text-foreground font-semibold text-lg mb-4"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
               What to expect
@@ -49,7 +52,7 @@ export default function ReservationsPage() {
               ].map((item) => (
                 <li
                   key={item}
-                  className="flex items-start gap-2 text-sm text-gray-400"
+                  className="flex items-start gap-2 text-sm text-text-muted"
                 >
                   <span className="text-primary mt-0.5">•</span>
                   {item}
@@ -59,14 +62,14 @@ export default function ReservationsPage() {
           </div>
 
           {/* Cancellation Policy */}
-          <div className="bg-primary/10 border border-primary/20 rounded-2xl p-6">
+          <div className="bg-amber-50 border border-amber-200 rounded-2xl p-6">
             <h3
-              className="text-primary font-semibold text-lg mb-2"
+              className="text-amber-800 font-semibold text-lg mb-2"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
               Cancellation Policy
             </h3>
-            <p className="text-gray-400 text-sm leading-relaxed">
+            <p className="text-amber-700 text-sm leading-relaxed">
               Free cancellation up to 2 hours before your reservation. Please
               call us if you need to make any changes.
             </p>
@@ -74,7 +77,7 @@ export default function ReservationsPage() {
         </div>
 
         {/* Right Panel — Form */}
-        <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
+        <div className="bg-surface border border-border rounded-2xl p-8">
           <ReservationForm />
         </div>
       </section>
