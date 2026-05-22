@@ -3,14 +3,29 @@
 import { useForm, SubmitHandler } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
-import { reservationSchema, ReservationSchema } from "@/src/lib/validation/reservation";
+import {
+  reservationSchema,
+  ReservationSchema,
+} from "@/src/lib/validation/reservation";
 import { ApiResponse } from "@/src/types/reservation";
 
 const TIME_SLOTS = [
-  "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM",
-  "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM",
-  "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM",
-  "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM",
+  "12:00 PM",
+  "12:30 PM",
+  "1:00 PM",
+  "1:30 PM",
+  "2:00 PM",
+  "2:30 PM",
+  "3:00 PM",
+  "3:30 PM",
+  "6:00 PM",
+  "6:30 PM",
+  "7:00 PM",
+  "7:30 PM",
+  "8:00 PM",
+  "8:30 PM",
+  "9:00 PM",
+  "9:30 PM",
 ];
 
 const OCCASIONS = [
@@ -23,7 +38,9 @@ const OCCASIONS = [
 ];
 
 export default function ReservationForm() {
-  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [status, setStatus] = useState<
+    "idle" | "loading" | "success" | "error"
+  >("idle");
   const [serverMessage, setServerMessage] = useState("");
 
   const {
@@ -54,6 +71,10 @@ export default function ReservationForm() {
         setStatus("success");
         setServerMessage(result.message);
         reset();
+        setTimeout(() => {
+          setStatus("idle");
+          setServerMessage("");
+        }, 3000);
       } else {
         setStatus("error");
         setServerMessage(result.error);
@@ -66,10 +87,11 @@ export default function ReservationForm() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
-
       {/* Full Name */}
       <div>
-        <label className="block text-sm text-text-muted mb-1.5">Full Name *</label>
+        <label className="block text-sm text-text-muted mb-1.5">
+          Full Name *
+        </label>
         <input
           {...register("fullName")}
           placeholder="Your Name Here"
@@ -83,7 +105,9 @@ export default function ReservationForm() {
       {/* Email & Phone */}
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label className="block text-sm text-text-muted mb-1.5">Email *</label>
+          <label className="block text-sm text-text-muted mb-1.5">
+            Email *
+          </label>
           <input
             {...register("email")}
             type="email"
@@ -95,7 +119,9 @@ export default function ReservationForm() {
           )}
         </div>
         <div>
-          <label className="block text-sm text-text-muted mb-1.5">Phone *</label>
+          <label className="block text-sm text-text-muted mb-1.5">
+            Phone *
+          </label>
           <input
             {...register("phone")}
             placeholder="+1 234 567 8900"
@@ -110,7 +136,10 @@ export default function ReservationForm() {
       {/* Date & Guests */}
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label className="block text-sm text-text-muted mb-1.5"> Date *</label>
+          <label className="block text-sm text-text-muted mb-1.5">
+            {" "}
+            Date *
+          </label>
           <input
             {...register("date")}
             type="date"
@@ -121,7 +150,10 @@ export default function ReservationForm() {
           )}
         </div>
         <div>
-          <label className="block text-sm text-text-muted mb-1.5"> Guests *</label>
+          <label className="block text-sm text-text-muted mb-1.5">
+            {" "}
+            Guests *
+          </label>
           <input
             {...register("guests", { valueAsNumber: true })}
             type="number"
@@ -138,13 +170,17 @@ export default function ReservationForm() {
 
       {/* Time Slots */}
       <div>
-        <label className="block text-sm text-text-muted mb-2">Time Slot *</label>
+        <label className="block text-sm text-text-muted mb-2">
+          Time Slot *
+        </label>
         <div className="grid grid-cols-4 gap-2">
           {TIME_SLOTS.map((slot) => (
             <button
               key={slot}
               type="button"
-              onClick={() => setValue("timeSlot", slot, { shouldValidate: true })}
+              onClick={() =>
+                setValue("timeSlot", slot, { shouldValidate: true })
+              }
               className={`py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
                 selectedTimeSlot === slot
                   ? "bg-primary text-white"
@@ -162,7 +198,9 @@ export default function ReservationForm() {
 
       {/* Occasion */}
       <div>
-        <label className="block text-sm text-text-muted mb-1.5">Select Occasion (Optional)</label>
+        <label className="block text-sm text-text-muted mb-1.5">
+          Select Occasion (Optional)
+        </label>
         <select
           {...register("occasion")}
           className="w-full bg-background border border-border rounded-lg px-4 py-3 text-text-muted focus:outline-none focus:border-primary transition-colors"
@@ -178,7 +216,9 @@ export default function ReservationForm() {
 
       {/* Special Requests */}
       <div>
-        <label className="block text-sm text-text-muted mb-1.5">Special Requests (Optional)</label>
+        <label className="block text-sm text-text-muted mb-1.5">
+          Special Requests (Optional)
+        </label>
         <textarea
           {...register("specialRequests")}
           rows={3}
@@ -186,7 +226,9 @@ export default function ReservationForm() {
           className="w-full bg-background border border-border rounded-lg px-4 py-3 text-foreground placeholder:text-text-muted focus:outline-none focus:border-primary transition-colors resize-none"
         />
         {errors.specialRequests && (
-          <p className="text-accent text-xs mt-1">{errors.specialRequests.message}</p>
+          <p className="text-accent text-xs mt-1">
+            {errors.specialRequests.message}
+          </p>
         )}
       </div>
 
@@ -214,7 +256,6 @@ export default function ReservationForm() {
       <p className="text-center text-text-muted text-xs">
         By confirming, you agree to our cancellation policy
       </p>
-
     </form>
   );
 }
