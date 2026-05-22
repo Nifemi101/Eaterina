@@ -39,7 +39,6 @@ export default function PopularDishes() {
   return (
     <section className="bg-background py-20 px-6">
       <div className="max-w-5xl mx-auto">
-
         {/* Header */}
         <div className="text-center mb-12">
           <span className="text-primary text-sm font-medium uppercase tracking-widest">
@@ -52,7 +51,8 @@ export default function PopularDishes() {
             Popular Dishes
           </h2>
           <p className="text-text-muted mt-3 max-w-md mx-auto">
-            Handpicked favourites loved by our guests — crafted fresh, served with care.
+            Handpicked favourites loved by our guests — crafted fresh, served
+            with care.
           </p>
         </div>
 
@@ -69,6 +69,7 @@ export default function PopularDishes() {
                   src={dish.image}
                   alt={dish.name}
                   fill
+                  sizes="112px"
                   className="object-contain drop-shadow-md"
                 />
               </div>
@@ -91,7 +92,6 @@ export default function PopularDishes() {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

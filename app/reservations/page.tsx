@@ -10,8 +10,7 @@ export default function ReservationsPage() {
           className="text-4xl md:text-5xl font-bold text-white"
           style={{ fontFamily: "var(--font-playfair)" }}
         >
-          Reserve Your{" "}
-          <span className="text-primary">Table</span>
+          Reserve Your <span className="text-primary">Table</span>
         </h1>
         <p className="text-gray-500 mt-3 text-sm">
           Experience exceptional cuisine — book your spot today
@@ -20,7 +19,6 @@ export default function ReservationsPage() {
 
       {/* Content */}
       <section className="max-w-6xl mx-auto px-6 pb-20 grid grid-cols-1 lg:grid-cols-2 gap-10">
-
         {/* Left Panel */}
         <div className="space-y-6">
           {/* Food Image */}
@@ -29,6 +27,7 @@ export default function ReservationsPage() {
               src="/images/reservation-dish.jpg"
               alt="Featured dish"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
             />
           </div>
@@ -48,7 +47,10 @@ export default function ReservationsPage() {
                 "Perfect for dates, celebrations, and business dinners",
                 "Live music on weekends (Fri & Sat)",
               ].map((item) => (
-                <li key={item} className="flex items-start gap-2 text-sm text-gray-400">
+                <li
+                  key={item}
+                  className="flex items-start gap-2 text-sm text-gray-400"
+                >
                   <span className="text-primary mt-0.5">•</span>
                   {item}
                 </li>
@@ -65,8 +67,8 @@ export default function ReservationsPage() {
               Cancellation Policy
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Free cancellation up to 2 hours before your reservation.
-              Please call us if you need to make any changes.
+              Free cancellation up to 2 hours before your reservation. Please
+              call us if you need to make any changes.
             </p>
           </div>
         </div>
@@ -75,7 +77,6 @@ export default function ReservationsPage() {
         <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
           <ReservationForm />
         </div>
-
       </section>
     </main>
   );
