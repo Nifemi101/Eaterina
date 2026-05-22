@@ -1,0 +1,206 @@
+[
+  {
+    "id": 1,
+    "name": "Crispy Calamari",
+    "description": "Golden fried calamari rings served with garlic aioli and a squeeze of fresh lemon.",
+    "price": "$12.99",
+    "category": "Starters",
+    "image": "/images/menu1.png",
+    "badge": "Popular"
+  },
+  {
+    "id": 2,
+    "name": "Bruschetta al Pomodoro",
+    "description": "Toasted sourdough topped with fresh tomatoes, basil, garlic, and a drizzle of olive oil.",
+    "price": "$9.99",
+    "category": "Starters",
+    "image": "/images/menu2.png"
+  },
+  {
+    "id": 3,
+    "name": "Stuffed Mushrooms",
+    "description": "Portobello mushrooms filled with herbed cream cheese, spinach, and parmesan.",
+    "price": "$11.99",
+    "category": "Starters",
+    "image": "/images/menu3.png"
+  },
+  {
+    "id": 4,
+    "name": "Chicken Satay Skewers",
+    "description": "Grilled chicken skewers marinated in lemongrass and served with peanut dipping sauce.",
+    "price": "$13.99",
+    "category": "Starters",
+    "image": "/images/menu4.png",
+    "badge": "Chef's Pick"
+  },
+  {
+    "id": 5,
+    "name": "Beef Oxtail Soup",
+    "description": "Slow-cooked oxtail in a rich, deeply savory broth with tender vegetables and aromatic herbs.",
+    "price": "$16.99",
+    "category": "Soups",
+    "image": "/images/menu5.png",
+    "badge": "Chef's Favourite"
+  },
+  {
+    "id": 6,
+    "name": "Creamy Tom-Kah-Gai",
+    "description": "Velvety Thai coconut soup with lemongrass, galangal, mushrooms, and a perfect balance of spice.",
+    "price": "$14.99",
+    "category": "Soups",
+    "image": "/images/menu6.png",
+    "badge": "Most Ordered"
+  },
+  {
+    "id": 7,
+    "name": "French Onion Soup",
+    "description": "Classic caramelised onion soup topped with a toasted crouton and melted Gruyère cheese.",
+    "price": "$13.99",
+    "category": "Soups",
+    "image": "/images/menu7.png"
+  },
+  {
+    "id": 8,
+    "name": "Roasted Tomato Bisque",
+    "description": "Smooth and smoky roasted tomato soup with a swirl of cream and fresh basil oil.",
+    "price": "$12.99",
+    "category": "Soups",
+    "image": "/images/menu8.png"
+  },
+  {
+    "id": 9,
+    "name": "Chicken Biryani",
+    "description": "Fragrant basmati rice layered with spiced chicken, caramelised onions, saffron, and fresh herbs.",
+    "price": "$22.99",
+    "category": "Main Course",
+    "image": "/images/menu9.png",
+    "badge": "Fan Favourite"
+  },
+  {
+    "id": 10,
+    "name": "Grilled Salmon Fillet",
+    "description": "Pan-seared Atlantic salmon with lemon butter sauce, seasonal vegetables, and wild rice.",
+    "price": "$28.99",
+    "category": "Main Course",
+    "image": "/images/menu10.png"
+  },
+  {
+    "id": 11,
+    "name": "Lamb Chops",
+    "description": "Herb-crusted lamb chops served with roasted garlic mash and a rosemary red wine jus.",
+    "price": "$34.99",
+    "category": "Main Course",
+    "image": "/images/menu11.png",
+    "badge": "Premium"
+  },
+  {
+    "id": 12,
+    "name": "Jerk Chicken Platter",
+    "description": "Slow-grilled jerk chicken with festival dumplings, rice and peas, and coleslaw.",
+    "price": "$24.99",
+    "category": "Main Course",
+    "image": "/images/menu12.png"
+  },
+  {
+    "id": 13,
+    "name": "Stir Fry Pasta",
+    "description": "Al dente pasta tossed in a bold stir-fry sauce with crisp vegetables, garlic, and chilli.",
+    "price": "$18.99",
+    "category": "Pasta",
+    "image": "/images/menu13.png",
+    "badge": "House Special"
+  },
+  {
+    "id": 14,
+    "name": "Spaghetti Carbonara",
+    "description": "Classic Roman pasta with pancetta, egg yolk, pecorino romano, and cracked black pepper.",
+    "price": "$19.99",
+    "category": "Pasta",
+    "image": "/images/menu14.png"
+  },
+  {
+    "id": 15,
+    "name": "Penne Arrabbiata",
+    "description": "Penne pasta in a fiery tomato sauce with garlic, red chilli flakes, and fresh parsley.",
+    "price": "$16.99",
+    "category": "Pasta",
+    "image": "/images/menu15.png"
+  },
+  {
+    "id": 16,
+    "name": "Truffle Mushroom Tagliatelle",
+    "description": "Fresh tagliatelle with wild mushrooms, truffle oil, parmesan, and a light cream sauce.",
+    "price": "$23.99",
+    "category": "Pasta",
+    "image": "/images/menu16.png",
+    "badge": "Chef's Pick"
+  },
+  {
+    "id": 17,
+    "name": "Mango Passion Cooler",
+    "description": "Fresh mango blended with passion fruit, lime juice, and sparkling water. Served over ice.",
+    "price": "$7.99",
+    "category": "Drinks",
+    "image": "/images/menu17.png"
+  },
+  {
+    "id": 18,
+    "name": "Classic Mojito",
+    "description": "Refreshing blend of fresh mint, lime juice, sugar syrup, and soda water.",
+    "price": "$8.99",
+    "category": "Drinks",
+    "image": "/images/menu18.png",
+    "badge": "Popular"
+  },
+  {
+    "id": 19,
+    "name": "Signature Eateria Punch",
+    "description": "Our house blend of tropical juices, grenadine, and a hint of ginger. Non-alcoholic.",
+    "price": "$6.99",
+    "category": "Drinks",
+    "image": "/images/menu19.png",
+    "badge": "House Special"
+  },
+  {
+    "id": 20,
+    "name": "Iced Hibiscus Lemonade",
+    "description": "Tangy hibiscus flower tea sweetened with honey and blended with fresh lemonade.",
+    "price": "$6.99",
+    "category": "Drinks",
+    "image": "/images/menu20.png"
+  },
+  {
+    "id": 21,
+    "name": "Warm Chocolate Lava Cake",
+    "description": "Decadent dark chocolate cake with a molten centre, served with vanilla bean ice cream.",
+    "price": "$10.99",
+    "category": "Desserts",
+    "image": "/images/menu21.png",
+    "badge": "Most Ordered"
+  },
+  {
+    "id": 22,
+    "name": "Mango Panna Cotta",
+    "description": "Silky Italian cream dessert infused with vanilla and topped with a fresh mango coulis.",
+    "price": "$9.99",
+    "category": "Desserts",
+    "image": "/images/menu22.png"
+  },
+  {
+    "id": 23,
+    "name": "Crème Brûlée",
+    "description": "Classic French custard with a perfectly caramelised sugar crust and fresh berries.",
+    "price": "$11.99",
+    "category": "Desserts",
+    "image": "/images/menu23.png",
+    "badge": "Chef's Favourite"
+  },
+  {
+    "id": 24,
+    "name": "Baklava Cheesecake",
+    "description": "A fusion of creamy New York cheesecake layered with honey-soaked baklava and pistachios.",
+    "price": "$12.99",
+    "category": "Desserts",
+    "image": "/images/menu24.png"
+  }
+]
