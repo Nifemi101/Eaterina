@@ -4,16 +4,13 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <section className="relative w-full min-h-[90vh] bg-background overflow-hidden flex items-center">
-
       {/* Background decoration */}
       <div className="absolute top-[-80px] right-[-80px] w-[500px] h-[500px] bg-primary/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-[-60px] left-[-60px] w-[350px] h-[350px] bg-primary-light/10 rounded-full blur-2xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-20">
-
         {/* Left — Text & CTA */}
         <div className="flex flex-col gap-6 z-10">
-
           {/* Badge */}
           <span className="inline-flex items-center gap-2 bg-primary/10 text-primary text-sm font-medium px-4 py-1.5 rounded-full w-fit">
             Fine Dining Experience
@@ -46,9 +43,9 @@ export default function Hero() {
 
           {/* Subtext */}
           <p className="text-text-muted text-lg leading-relaxed max-w-md">
-            An unforgettable dining experience crafted with passion.
-            Fresh ingredients, bold flavours, and a warm atmosphere
-            waiting just for you.
+            An unforgettable dining experience crafted with passion. Fresh
+            ingredients, bold flavours, and a warm atmosphere waiting just for
+            you.
           </p>
 
           {/* CTAs */}
@@ -95,13 +92,12 @@ export default function Hero() {
           <Image
             src="/images/pastaWSauce.png"
             alt="Featured dish"
-            width={500}
-            height={500}
-            className="relative z-10 drop-shadow-2xl object-contain"
+            width={580}
+            height={580}
+            className="relative z-10 drop-shadow-2xl object-contain transition-transform duration-500 hover:rotate-12"
             priority
           />
         </div>
-
       </div>
     </section>
   );

@@ -34,7 +34,7 @@ export default function ReservationForm() {
     reset,
     formState: { errors },
   } = useForm<ReservationSchema>({
-   resolver: zodResolver(reservationSchema) as any,
+    resolver: zodResolver(reservationSchema) as any,
   });
 
   const selectedTimeSlot = watch("timeSlot");
@@ -69,11 +69,11 @@ export default function ReservationForm() {
 
       {/* Full Name */}
       <div>
-        <label className="block text-sm text-gray-400 mb-1.5">Full Name *</label>
+        <label className="block text-sm text-text-muted mb-1.5">Full Name *</label>
         <input
           {...register("fullName")}
           placeholder="Your Name Here"
-          className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder:text-gray-600 focus:outline-none focus:border-primary transition-colors"
+          className="w-full bg-background border border-border rounded-lg px-4 py-3 text-foreground placeholder:text-text-muted focus:outline-none focus:border-primary transition-colors"
         />
         {errors.fullName && (
           <p className="text-accent text-xs mt-1">{errors.fullName.message}</p>
@@ -83,23 +83,23 @@ export default function ReservationForm() {
       {/* Email & Phone */}
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label className="block text-sm text-gray-400 mb-1.5">Email *</label>
+          <label className="block text-sm text-text-muted mb-1.5">Email *</label>
           <input
             {...register("email")}
             type="email"
             placeholder="your@email.com"
-            className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder:text-gray-600 focus:outline-none focus:border-primary transition-colors"
+            className="w-full bg-background border border-border rounded-lg px-4 py-3 text-foreground placeholder:text-text-muted focus:outline-none focus:border-primary transition-colors"
           />
           {errors.email && (
             <p className="text-accent text-xs mt-1">{errors.email.message}</p>
           )}
         </div>
         <div>
-          <label className="block text-sm text-gray-400 mb-1.5">Phone *</label>
+          <label className="block text-sm text-text-muted mb-1.5">Phone *</label>
           <input
             {...register("phone")}
             placeholder="+1 234 567 8900"
-            className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder:text-gray-600 focus:outline-none focus:border-primary transition-colors"
+            className="w-full bg-background border border-border rounded-lg px-4 py-3 text-foreground placeholder:text-text-muted focus:outline-none focus:border-primary transition-colors"
           />
           {errors.phone && (
             <p className="text-accent text-xs mt-1">{errors.phone.message}</p>
@@ -110,25 +110,25 @@ export default function ReservationForm() {
       {/* Date & Guests */}
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label className="block text-sm text-gray-400 mb-1.5">📅 Date *</label>
+          <label className="block text-sm text-text-muted mb-1.5"> Date *</label>
           <input
             {...register("date")}
             type="date"
-            className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors"
+            className="w-full bg-background border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-primary transition-colors"
           />
           {errors.date && (
             <p className="text-accent text-xs mt-1">{errors.date.message}</p>
           )}
         </div>
         <div>
-          <label className="block text-sm text-gray-400 mb-1.5">👥 Guests *</label>
+          <label className="block text-sm text-text-muted mb-1.5"> Guests *</label>
           <input
             {...register("guests", { valueAsNumber: true })}
             type="number"
             min={1}
             max={20}
             placeholder="2"
-            className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder:text-gray-600 focus:outline-none focus:border-primary transition-colors"
+            className="w-full bg-background border border-border rounded-lg px-4 py-3 text-foreground placeholder:text-text-muted focus:outline-none focus:border-primary transition-colors"
           />
           {errors.guests && (
             <p className="text-accent text-xs mt-1">{errors.guests.message}</p>
@@ -138,7 +138,7 @@ export default function ReservationForm() {
 
       {/* Time Slots */}
       <div>
-        <label className="block text-sm text-gray-400 mb-2">🕐 Time Slot *</label>
+        <label className="block text-sm text-text-muted mb-2">Time Slot *</label>
         <div className="grid grid-cols-4 gap-2">
           {TIME_SLOTS.map((slot) => (
             <button
@@ -148,7 +148,7 @@ export default function ReservationForm() {
               className={`py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
                 selectedTimeSlot === slot
                   ? "bg-primary text-white"
-                  : "bg-white/5 border border-white/10 text-gray-400 hover:border-primary/50 hover:text-white"
+                  : "bg-background border border-border text-text-muted hover:border-primary/50 hover:text-foreground"
               }`}
             >
               {slot}
@@ -162,14 +162,14 @@ export default function ReservationForm() {
 
       {/* Occasion */}
       <div>
-        <label className="block text-sm text-gray-400 mb-1.5">Select Occasion (Optional)</label>
+        <label className="block text-sm text-text-muted mb-1.5">Select Occasion (Optional)</label>
         <select
           {...register("occasion")}
-          className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-gray-400 focus:outline-none focus:border-primary transition-colors"
+          className="w-full bg-background border border-border rounded-lg px-4 py-3 text-text-muted focus:outline-none focus:border-primary transition-colors"
         >
           <option value="">Birthday, Anniversary, Business...</option>
           {OCCASIONS.map((o) => (
-            <option key={o.value} value={o.value} className="bg-[#1c1a16] text-white">
+            <option key={o.value} value={o.value}>
               {o.label}
             </option>
           ))}
@@ -178,21 +178,21 @@ export default function ReservationForm() {
 
       {/* Special Requests */}
       <div>
-        <label className="block text-sm text-gray-400 mb-1.5">💬 Special Requests (Optional)</label>
+        <label className="block text-sm text-text-muted mb-1.5">Special Requests (Optional)</label>
         <textarea
           {...register("specialRequests")}
           rows={3}
           placeholder="Dietary restrictions, preferred seating, decorations..."
-          className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder:text-gray-600 focus:outline-none focus:border-primary transition-colors resize-none"
+          className="w-full bg-background border border-border rounded-lg px-4 py-3 text-foreground placeholder:text-text-muted focus:outline-none focus:border-primary transition-colors resize-none"
         />
         {errors.specialRequests && (
           <p className="text-accent text-xs mt-1">{errors.specialRequests.message}</p>
         )}
       </div>
 
-      {/* Server feedback */}
+      {/* Server Feedback */}
       {status === "success" && (
-        <div className="bg-green-500/10 border border-green-500/30 rounded-lg px-4 py-3 text-green-400 text-sm">
+        <div className="bg-green-500/10 border border-green-500/30 rounded-lg px-4 py-3 text-green-600 text-sm">
           ✅ {serverMessage}
         </div>
       )}
@@ -211,9 +211,10 @@ export default function ReservationForm() {
         {status === "loading" ? "Sending..." : "✓ Confirm Reservation"}
       </button>
 
-      <p className="text-center text-gray-600 text-xs">
+      <p className="text-center text-text-muted text-xs">
         By confirming, you agree to our cancellation policy
       </p>
+
     </form>
   );
 }
