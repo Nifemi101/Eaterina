@@ -5,7 +5,7 @@ const TESTIMONIALS = [
     id: 1,
     name: "Sarah Mitchell",
     role: "Food Blogger",
-    image: "/images/customer1.png",
+    image: "/images/user1.jpg",
     review:
       "Eateria completely blew me away. The Beef Oxtail Soup was the most flavourful thing I've had in years. The ambiance, the service, everything was perfect. I'll definitely be back.",
     rating: 5,
@@ -14,7 +14,7 @@ const TESTIMONIALS = [
     id: 2,
     name: "James Okafor",
     role: "Regular Guest",
-    image: "/images/customer2.png",
+    image: "/images/user2.jpg",
     review:
       "I reserved a table for my anniversary and the team went above and beyond. The food was exceptional and the live music made the night truly special. Highly recommend!",
     rating: 5,
@@ -23,7 +23,7 @@ const TESTIMONIALS = [
     id: 3,
     name: "Priya Nair",
     role: "First Time Visitor",
-    image: "/images/customer3.png",
+    image: "/images/user3.jpg",
     review:
       "From the moment we walked in, we felt so welcome. The Chicken Biryani was fragrant and perfectly spiced. Easily the best dining experience I've had in this city.",
     rating: 5,
@@ -84,7 +84,7 @@ export default function Testimonials() {
                     alt={t.name}
                     fill
                     sizes="44px"
-                    className="object-cover"
+                    className="object-cover object-top"
                   />
                 </div>
                 <div>
