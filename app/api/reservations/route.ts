@@ -31,13 +31,13 @@ export async function POST(req: NextRequest) {
     // Send both emails in parallel
     const [restaurantEmail, userEmail] = await Promise.all([
       resend.emails.send({
-        from: "Eateria Reservations <reservations@yourdomain.com>",
+        from: "Eateria <onboarding@resend.dev>",
         to: process.env.RESTAURANT_EMAIL!,
         subject: `New Reservation — ${payload.fullName} on ${payload.date}`,
         html: restaurantEmailHtml(payload),
       }),
       resend.emails.send({
-        from: "Eateria <no-reply@yourdomain.com>",
+         from: "Eateria <onboarding@resend.dev>",
         to: payload.email,
         subject: "We've received your reservation request!",
         html: userConfirmationHtml(payload),
