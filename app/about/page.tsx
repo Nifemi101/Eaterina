@@ -42,7 +42,7 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero */}
-      <section className="relative bg-foreground py-24 px-6 overflow-hidden">
+      <section className="relative bg-foreground py-20 md:py-32 px-6 overflow-hidden">
         <div
           className="absolute inset-0 opacity-10"
           style={{
@@ -55,12 +55,12 @@ export default function AboutPage() {
             Our Story
           </span>
           <h1
-            className="text-4xl md:text-6xl font-bold text-white mt-3 leading-tight"
+            className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mt-3 leading-tight"
             style={{ fontFamily: "var(--font-playfair)" }}
           >
             Passion on Every <span className="text-primary">Plate</span>
           </h1>
-          <p className="text-white/60 mt-4 text-lg leading-relaxed">
+          <p className="text-white/60 mt-4 text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
             From a small family kitchen to a beloved dining destination — this
             is the story of Eateria.
           </p>
@@ -68,11 +68,11 @@ export default function AboutPage() {
       </section>
 
       {/* Story Section */}
-      <section className="max-w-6xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <section className="max-w-6xl mx-auto px-6 py-16 md:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center">
         {/* Image */}
-        <div className="relative rounded-3xl overflow-hidden h-[480px]">
+        <div className="relative rounded-3xl overflow-hidden h-[300px] sm:h-[400px] md:h-[480px]">
           <Image
-            src="/images/restaurantImg.png"
+            src="/images/reservationImg.jpg"
             alt="Eateria Restaurant"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
@@ -81,27 +81,27 @@ export default function AboutPage() {
           {/* Overlay badge */}
           <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm rounded-2xl px-5 py-4 shadow-lg">
             <p
-              className="text-foreground font-bold text-2xl"
+              className="text-foreground font-bold text-xl md:text-2xl"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
               Since 2016
             </p>
-            <p className="text-text-muted text-sm">Serving with love</p>
+            <p className="text-text-muted text-xs md:text-sm">Serving with love</p>
           </div>
         </div>
 
         {/* Text */}
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-6">
           <span className="text-primary text-sm font-medium uppercase tracking-widest">
             Who We Are
           </span>
           <h2
-            className="text-4xl font-bold text-foreground leading-tight"
+            className="text-3xl sm:text-4xl font-bold text-foreground leading-tight"
             style={{ fontFamily: "var(--font-playfair)" }}
           >
             More Than Just a <span className="text-primary">Restaurant</span>
           </h2>
-          <div className="flex flex-col gap-4 text-text-muted leading-relaxed">
+          <div className="flex flex-col gap-4 text-text-muted text-sm md:text-base leading-relaxed max-w-xl">
             <p>
               Eateria was born from a simple belief — that great food has the
               power to bring people together. What started as a small family
@@ -114,7 +114,7 @@ export default function AboutPage() {
               developed, every ingredient carefully sourced, and every guest
               treated like family.
             </p>
-            <p>
+            <p className="hidden md:block">
               Whether you're joining us for a quiet dinner, a celebration, or a
               business lunch — we promise an experience worth remembering.
             </p>
@@ -130,16 +130,16 @@ export default function AboutPage() {
 
       {/* Stats */}
       <section className="bg-foreground py-16 px-6">
-        <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-8">
           {STATS.map((stat) => (
             <div key={stat.label} className="text-center">
               <p
-                className="text-5xl font-bold text-primary"
+                className="text-4xl md:text-5xl font-bold text-primary"
                 style={{ fontFamily: "var(--font-playfair)" }}
               >
                 {stat.value}
               </p>
-              <p className="text-white/50 text-sm mt-2 uppercase tracking-widest">
+              <p className="text-white/50 text-xs mt-2 uppercase tracking-widest">
                 {stat.label}
               </p>
             </div>
@@ -148,23 +148,23 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="max-w-6xl mx-auto px-6 py-20">
+      <section className="max-w-6xl mx-auto px-6 py-16 md:py-24">
         <div className="text-center mb-12">
           <span className="text-primary text-sm font-medium uppercase tracking-widest">
             What Drives Us
           </span>
           <h2
-            className="text-4xl font-bold text-foreground mt-2"
+            className="text-3xl md:text-4xl font-bold text-foreground mt-2"
             style={{ fontFamily: "var(--font-playfair)" }}
           >
             Our Core Values
           </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {VALUES.map((value) => (
             <div
               key={value.title}
-              className="bg-surface border border-border rounded-3xl p-6 flex flex-col gap-4 hover:border-primary/30 hover:shadow-md transition-all duration-300"
+              className="bg-surface border border-border rounded-3xl p-6 md:p-8 flex flex-col gap-4 hover:border-primary/30 hover:shadow-md transition-all duration-300"
             >
               <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center">
                 <HugeiconsIcon icon={value.icon} size={24} color="#e8a020" />
@@ -184,20 +184,20 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Banner */}
-      <section className="bg-foreground py-16 px-6 text-center">
+      <section className="bg-foreground py-20 px-6 text-center">
         <h2
-          className="text-3xl md:text-4xl font-bold text-white"
+          className="text-2xl sm:text-3xl md:text-4xl font-bold text-white max-w-2xl mx-auto"
           style={{ fontFamily: "var(--font-playfair)" }}
         >
           Ready for an Unforgettable{" "}
           <span className="text-primary">Experience?</span>
         </h2>
-        <p className="text-white/50 mt-3 max-w-md mx-auto">
+        <p className="text-white/50 mt-3 max-w-md mx-auto text-sm md:text-base">
           Book your table today and let us take care of everything else.
         </p>
         <Link
           href="/reservations"
-          className="inline-block mt-6 bg-primary hover:bg-primary-dark text-white font-semibold px-8 py-4 rounded-full transition-colors duration-200"
+          className="inline-block mt-8 bg-primary hover:bg-primary-dark text-white font-semibold px-8 py-4 rounded-full transition-colors duration-200"
         >
           Reserve a Table
         </Link>

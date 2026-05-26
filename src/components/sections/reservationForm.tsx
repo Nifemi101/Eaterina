@@ -103,7 +103,7 @@ export default function ReservationForm() {
       </div>
 
       {/* Email & Phone */}
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <label className="block text-sm text-text-muted mb-1.5">
             Email *
@@ -134,7 +134,7 @@ export default function ReservationForm() {
       </div>
 
       {/* Date & Guests */}
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <label className="block text-sm text-text-muted mb-1.5">
             {" "}
@@ -173,7 +173,7 @@ export default function ReservationForm() {
         <label className="block text-sm text-text-muted mb-2">
           Time Slot *
         </label>
-        <div className="grid grid-cols-4 gap-2">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
           {TIME_SLOTS.map((slot) => (
             <button
               key={slot}
@@ -181,7 +181,7 @@ export default function ReservationForm() {
               onClick={() =>
                 setValue("timeSlot", slot, { shouldValidate: true })
               }
-              className={`py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+              className={`py-3 rounded-lg text-sm font-medium transition-all duration-200 ${
                 selectedTimeSlot === slot
                   ? "bg-primary text-white"
                   : "bg-background border border-border text-text-muted hover:border-primary/50 hover:text-foreground"

@@ -42,42 +42,42 @@ function StarRating({ count }: { count: number }) {
 
 export default function Testimonials() {
   return (
-    <section className="bg-background py-20 px-6">
+    <section className="bg-background py-16 md:py-24 px-6">
       <div className="max-w-6xl mx-auto">
 
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-10 md:mb-16">
           <span className="text-primary text-sm font-medium uppercase tracking-widest">
             Reviews
           </span>
           <h2
-            className="text-4xl font-bold text-foreground mt-2"
+            className="text-3xl md:text-4xl font-bold text-foreground mt-2"
             style={{ fontFamily: "var(--font-playfair)" }}
           >
             What Our Guests Say
           </h2>
-          <p className="text-text-muted mt-3 max-w-md mx-auto">
+          <p className="text-text-muted mt-3 max-w-md mx-auto text-sm md:text-base">
             Real experiences from the people who matter most — our guests.
           </p>
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {TESTIMONIALS.map((t) => (
             <div
               key={t.id}
-              className="bg-surface border border-border rounded-3xl p-6 flex flex-col gap-4 hover:shadow-md hover:border-primary/30 transition-all duration-300"
+              className="bg-surface border border-border rounded-3xl p-6 md:p-8 flex flex-col gap-4 hover:shadow-md hover:border-primary/30 transition-all duration-300"
             >
               {/* Rating */}
               <StarRating count={t.rating} />
 
               {/* Review */}
-              <p className="text-text-muted text-sm leading-relaxed flex-1">
+              <p className="text-text-muted text-sm md:text-base leading-relaxed flex-1">
                 "{t.review}"
               </p>
 
               {/* Customer */}
-              <div className="flex items-center gap-3 pt-4 border-t border-border">
+              <div className="flex items-center gap-3 pt-5 border-t border-border mt-2">
                 <div className="relative w-11 h-11 rounded-full overflow-hidden bg-surface-muted flex-shrink-0">
                   <Image
                     src={t.image}

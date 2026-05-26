@@ -61,21 +61,21 @@ export default function PopularDishes() {
           {DISHES.map((dish) => (
             <div
               key={dish.id}
-              className="flex items-center gap-5 bg-surface border border-border rounded-3xl p-4 hover:shadow-lg hover:border-primary/30 transition-all duration-300"
+              className="flex flex-col sm:flex-row items-center sm:items-start gap-5 bg-surface border border-border rounded-3xl p-5 hover:shadow-lg hover:border-primary/30 transition-all duration-300 text-center sm:text-left"
             >
               {/* Image */}
-              <div className="relative w-28 h-28 flex-shrink-0">
+              <div className="relative w-24 h-24 sm:w-28 sm:h-28 flex-shrink-0">
                 <Image
                   src={dish.image}
                   alt={dish.name}
                   fill
-                  sizes="112px"
+                  sizes="(max-width: 640px) 96px, 112px"
                   className="object-contain drop-shadow-md"
                 />
               </div>
 
               {/* Info */}
-              <div className="flex flex-col gap-1.5">
+              <div className="flex flex-col items-center sm:items-start gap-1.5">
                 <span className="text-xs font-medium text-primary bg-primary/10 px-2.5 py-0.5 rounded-full w-fit">
                   {dish.tag}
                 </span>
@@ -85,7 +85,7 @@ export default function PopularDishes() {
                 >
                   {dish.name}
                 </h3>
-                <p className="text-text-muted text-sm leading-relaxed line-clamp-2">
+                <p className="text-text-muted text-sm leading-relaxed line-clamp-2 max-w-xs">
                   {dish.description}
                 </p>
               </div>

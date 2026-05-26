@@ -24,17 +24,17 @@ const HOURS = [
 export default function Footer() {
   return (
     <footer className="bg-foreground text-white py-16 px-6">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 text-center sm:text-left">
 
         {/* Brand */}
-        <div className="md:col-span-1 flex flex-col gap-4">
+        <div className="sm:col-span-2 md:col-span-1 flex flex-col items-center sm:items-start gap-4">
           <h2
             className="text-2xl font-bold"
             style={{ fontFamily: "var(--font-playfair)" }}
           >
             Eat<span className="text-primary">eria</span>
           </h2>
-          <p className="text-white/50 text-sm leading-relaxed">
+          <p className="text-white/50 text-sm leading-relaxed max-w-xs">
             Crafting unforgettable dining experiences with fresh
             ingredients, bold flavours, and warm hospitality.
           </p>
@@ -95,12 +95,12 @@ export default function Footer() {
         </div>
 
         {/* Contact */}
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 items-center sm:items-start">
           <h3 className="text-white font-semibold text-sm uppercase tracking-widest">
             Contact Us
           </h3>
-          <ul className="flex flex-col gap-4">
-            <li className="flex items-start gap-3">
+          <ul className="flex flex-col gap-4 items-center sm:items-start">
+            <li className="flex flex-col sm:flex-row items-center sm:items-start gap-3">
               <HugeiconsIcon icon={Location01Icon} size={18} color="#e8a020" />
               <span className="text-white/50 text-sm leading-relaxed">
                 3286 Leo Street, Lucien,
@@ -132,7 +132,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="max-w-6xl mx-auto mt-12 pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div className="max-w-6xl mx-auto mt-12 pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-center">
         <p className="text-white/30 text-xs">
           {`© ${new Date().getFullYear()} Eateria. All rights reserved.`}
         </p>

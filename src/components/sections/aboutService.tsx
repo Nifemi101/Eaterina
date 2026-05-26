@@ -44,12 +44,12 @@ const SERVICES = [
 
 export default function AboutServices() {
   return (
-    <section className="bg-background py-20 px-6">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <section className="bg-background py-16 md:py-24 px-6 overflow-hidden">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         {/* Left — Chef Image */}
         <div className="relative flex justify-center items-end">
           <div
-            className="relative z-10"
+            className="relative z-10 max-w-[300px] sm:max-w-md lg:max-w-full"
             style={{
               maskImage:
                 "linear-gradient(to bottom, black 60%, transparent 100%)",
@@ -68,36 +68,36 @@ export default function AboutServices() {
         </div>
 
         {/* Right — Text & Services */}
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-6">
           <span className="text-primary text-sm font-medium uppercase tracking-widest">
             Why Choose Us
           </span>
 
           <h2
-            className="text-4xl font-bold text-foreground leading-tight"
+            className="text-3xl sm:text-4xl font-bold text-foreground leading-tight"
             style={{ fontFamily: "var(--font-playfair)" }}
           >
-            We Are More Than <br />
+            We Are More Than <br className="hidden sm:block" />
             <span className="text-primary">Just a Restaurant</span>
           </h2>
 
-          <p className="text-text-muted leading-relaxed">
+          <p className="text-text-muted leading-relaxed max-w-xl">
             At Eateria, every detail matters — from the sourcing of fresh
             ingredients to the moment your plate arrives at the table. We craft
             experiences, not just meals.
           </p>
 
           {/* Services Grid */}
-          <div className="grid grid-cols-2 gap-4 mt-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2 w-full max-w-2xl lg:max-w-full">
             {SERVICES.map((service) => (
               <div
                 key={service.label}
-                className="flex items-start gap-3 bg-surface border border-border rounded-2xl p-4 hover:border-primary/30 hover:shadow-sm transition-all duration-200"
+                className="flex items-start gap-4 bg-surface border border-border rounded-2xl p-4 hover:border-primary/30 hover:shadow-sm transition-all duration-200 text-left"
               >
                 <div className="flex-shrink-0">
                   <HugeiconsIcon
                     icon={service.icon}
-                    size={28}
+                    size={24}
                     color="#e8a020"
                   />
                 </div>
