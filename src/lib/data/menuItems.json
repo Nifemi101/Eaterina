@@ -30,7 +30,7 @@
     "description": "Grilled chicken skewers marinated in lemongrass and served with peanut dipping sauce.",
     "price": "$13.99",
     "category": "Starters",
-    "image": "/images/menu4.png",
+    "image": "/images/grills.png",
     "badge": "Chef's Pick"
   },
   {
@@ -39,7 +39,7 @@
     "description": "Slow-cooked oxtail in a rich, deeply savory broth with tender vegetables and aromatic herbs.",
     "price": "$16.99",
     "category": "Soups",
-    "image": "/images/menu5.png",
+    "image": "/images/beefsoup.png",
     "badge": "Chef's Favourite"
   },
   {
@@ -48,7 +48,7 @@
     "description": "Velvety Thai coconut soup with lemongrass, galangal, mushrooms, and a perfect balance of spice.",
     "price": "$14.99",
     "category": "Soups",
-    "image": "/images/menu6.png",
+    "image": "/images/creamySoup.png",
     "badge": "Most Ordered"
   },
   {
@@ -57,7 +57,7 @@
     "description": "Classic caramelised onion soup topped with a toasted crouton and melted Gruyère cheese.",
     "price": "$13.99",
     "category": "Soups",
-    "image": "/images/menu7.png"
+    "image": "/images/onionSoup.png"
   },
   {
     "id": 8,
@@ -65,7 +65,7 @@
     "description": "Smooth and smoky roasted tomato soup with a swirl of cream and fresh basil oil.",
     "price": "$12.99",
     "category": "Soups",
-    "image": "/images/menu8.png"
+    "image": "/images/tomatoeSoup.png"
   },
   {
     "id": 9,
@@ -73,16 +73,16 @@
     "description": "Fragrant basmati rice layered with spiced chicken, caramelised onions, saffron, and fresh herbs.",
     "price": "$22.99",
     "category": "Main Course",
-    "image": "/images/menu9.png",
+    "image": "/images/ctaImage.png",
     "badge": "Fan Favourite"
   },
   {
     "id": 10,
-    "name": "Grilled Salmon Fillet",
+    "name": "Chicken Fillet",
     "description": "Pan-seared Atlantic salmon with lemon butter sauce, seasonal vegetables, and wild rice.",
     "price": "$28.99",
     "category": "Main Course",
-    "image": "/images/menu10.png"
+    "image": "/images/chickenFillet.png"
   },
   {
     "id": 11,
@@ -90,7 +90,7 @@
     "description": "Herb-crusted lamb chops served with roasted garlic mash and a rosemary red wine jus.",
     "price": "$34.99",
     "category": "Main Course",
-    "image": "/images/menu11.png",
+    "image": "/images/lambChops.png",
     "badge": "Premium"
   },
   {
@@ -99,7 +99,7 @@
     "description": "Slow-grilled jerk chicken with festival dumplings, rice and peas, and coleslaw.",
     "price": "$24.99",
     "category": "Main Course",
-    "image": "/images/menu12.png"
+    "image": "/images/platter.png"
   },
   {
     "id": 13,
@@ -107,7 +107,7 @@
     "description": "Al dente pasta tossed in a bold stir-fry sauce with crisp vegetables, garlic, and chilli.",
     "price": "$18.99",
     "category": "Pasta",
-    "image": "/images/menu13.png",
+    "image": "/images/stirFryPasta.png",
     "badge": "House Special"
   },
   {
@@ -116,7 +116,7 @@
     "description": "Classic Roman pasta with pancetta, egg yolk, pecorino romano, and cracked black pepper.",
     "price": "$19.99",
     "category": "Pasta",
-    "image": "/images/menu14.png"
+    "image": "/images/spagetti.png"
   },
   {
     "id": 15,
@@ -124,7 +124,7 @@
     "description": "Penne pasta in a fiery tomato sauce with garlic, red chilli flakes, and fresh parsley.",
     "price": "$16.99",
     "category": "Pasta",
-    "image": "/images/menu15.png"
+    "image": "/images/penne.png"
   },
   {
     "id": 16,
@@ -132,7 +132,7 @@
     "description": "Fresh tagliatelle with wild mushrooms, truffle oil, parmesan, and a light cream sauce.",
     "price": "$23.99",
     "category": "Pasta",
-    "image": "/images/menu16.png",
+    "image": "/images/truffle.png",
     "badge": "Chef's Pick"
   },
   {
