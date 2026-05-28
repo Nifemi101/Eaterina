@@ -86,7 +86,7 @@ export default function MenuPage() {
 
   return (
     <main className="min-h-screen bg-background pb-20">
-      {/* Header */}
+    
       <section className="text-center pt-16 md:pt-24 pb-10 px-6">
         <span className="text-primary text-sm font-medium uppercase tracking-widest">
           What We Serve
