@@ -72,7 +72,7 @@ export default function AboutPage() {
         {/* Image */}
         <div className="relative rounded-3xl overflow-hidden h-[300px] sm:h-[400px] md:h-[480px]">
           <Image
-            src="/images/reservationImg.jpg"
+            src="/images/interior.jpg"
             alt="Eateria Restaurant"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"

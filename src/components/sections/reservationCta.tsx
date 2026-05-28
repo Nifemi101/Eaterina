@@ -27,13 +27,13 @@ export default function reservationCta() {
           <div className="flex flex-col sm:flex-row items-center gap-4 mt-2 w-full sm:w-auto">
             <Link
               href="/reservations"
-              className="w-full sm:w-auto bg-primary hover:bg-primary-dark text-white font-semibold px-8 py-4 rounded-full transition-colors duration-200 text-center"
+              className="w-[85%] sm:w-auto bg-primary hover:bg-primary-dark text-white font-semibold px-8 py-4 rounded-full transition-colors duration-200 text-center"
             >
               Reserve a Table
             </Link>
             <Link
               href="/menu"
-              className="w-full sm:w-auto border-2 border-primary text-primary hover:bg-primary hover:text-white font-semibold px-8 py-4 rounded-full transition-all duration-200 text-center"
+              className="w-[85%] sm:w-auto border-2 border-primary text-primary hover:bg-primary hover:text-white font-semibold px-8 py-4 rounded-full transition-all duration-200 text-center"
             >
               View Menu
             </Link>

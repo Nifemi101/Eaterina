@@ -52,13 +52,13 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row items-center gap-4 mt-2 w-full sm:w-auto">
             <Link
               href="/menu"
-              className="w-full sm:w-auto bg-primary hover:bg-primary-dark text-white font-semibold px-7 py-3.5 rounded-full transition-colors duration-200 text-center"
+              className="w-[85%] sm:w-auto bg-primary hover:bg-primary-dark text-white font-semibold px-7 py-3.5 rounded-full transition-colors duration-200 text-center"
             >
               Explore Menu
             </Link>
             <Link
               href="/reservations"
-              className="w-full sm:w-auto border border-border hover:border-primary text-foreground hover:text-primary font-semibold px-7 py-3.5 rounded-full transition-colors duration-200 text-center"
+              className="w-[85%] sm:w-auto border border-border hover:border-primary text-foreground hover:text-primary font-semibold px-7 py-3.5 rounded-full transition-colors duration-200 text-center"
             >
               Reserve a Table
             </Link>

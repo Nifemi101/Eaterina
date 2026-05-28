@@ -141,7 +141,7 @@
     "description": "Fresh mango blended with passion fruit, lime juice, and sparkling water. Served over ice.",
     "price": "$7.99",
     "category": "Drinks",
-    "image": "/images/menu17.png"
+    "image": "/images/mango.png"
   },
   {
     "id": 18,
@@ -149,7 +149,7 @@
     "description": "Refreshing blend of fresh mint, lime juice, sugar syrup, and soda water.",
     "price": "$8.99",
     "category": "Drinks",
-    "image": "/images/menu18.png",
+    "image": "/images/mojito.png",
     "badge": "Popular"
   },
   {
@@ -158,7 +158,7 @@
     "description": "Our house blend of tropical juices, grenadine, and a hint of ginger. Non-alcoholic.",
     "price": "$6.99",
     "category": "Drinks",
-    "image": "/images/menu19.png",
+    "image": "/images/punch.png",
     "badge": "House Special"
   },
   {
@@ -167,7 +167,7 @@
     "description": "Tangy hibiscus flower tea sweetened with honey and blended with fresh lemonade.",
     "price": "$6.99",
     "category": "Drinks",
-    "image": "/images/menu20.png"
+    "image": "/images/zobo.png"
   },
   {
     "id": 21,
@@ -175,7 +175,7 @@
     "description": "Decadent dark chocolate cake with a molten centre, served with vanilla bean ice cream.",
     "price": "$10.99",
     "category": "Desserts",
-    "image": "/images/menu21.png",
+    "image": "/images/cake.png",
     "badge": "Most Ordered"
   },
   {
@@ -184,7 +184,7 @@
     "description": "Silky Italian cream dessert infused with vanilla and topped with a fresh mango coulis.",
     "price": "$9.99",
     "category": "Desserts",
-    "image": "/images/menu22.png"
+    "image": "/images/mangoCotta.png"
   },
   {
     "id": 23,
@@ -192,7 +192,7 @@
     "description": "Classic French custard with a perfectly caramelised sugar crust and fresh berries.",
     "price": "$11.99",
     "category": "Desserts",
-    "image": "/images/menu23.png",
+    "image": "/images/cream.png",
     "badge": "Chef's Favourite"
   },
   {
@@ -201,6 +201,6 @@
     "description": "A fusion of creamy New York cheesecake layered with honey-soaked baklava and pistachios.",
     "price": "$12.99",
     "category": "Desserts",
-    "image": "/images/menu24.png"
+    "image": "/images/cheese.png"
   }
 ]
