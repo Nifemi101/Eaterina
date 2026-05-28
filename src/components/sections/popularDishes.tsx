@@ -4,7 +4,7 @@ const DISHES = [
   {
     id: 1,
     name: "Beef Oxtail Soup",
-    image: "/images/beefSoup.png",
+    image: "/images/beefsoup.png",
     description:
       "Slow-cooked oxtail in a rich, deeply savory broth with tender vegetables and aromatic herbs. A soul-warming classic.",
     tag: "Chef's Favourite",
