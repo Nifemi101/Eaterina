@@ -3,7 +3,7 @@ import Image from "next/image";
 const TESTIMONIALS = [
   {
     id: 1,
-    name: "Sarah Mitchell",
+    name: "James Alexander",
     role: "Food Blogger",
     image: "/images/user1.jpg",
     review:
@@ -12,7 +12,7 @@ const TESTIMONIALS = [
   },
   {
     id: 2,
-    name: "James Okafor",
+    name: "andrea smith",
     role: "Regular Guest",
     image: "/images/user2.jpg",
     review:
@@ -21,7 +21,7 @@ const TESTIMONIALS = [
   },
   {
     id: 3,
-    name: "Priya Nair",
+    name: "Priya Noir",
     role: "First Time Visitor",
     image: "/images/user3.jpg",
     review:
